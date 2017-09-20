@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+body
+{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px ##f9a4da, 0 0 30px ##f9a4da, 0 0 40px ##f9a4da, 0 0 55px ##f9a4da, 0 0 75px ##f9a4da;
+	background-color: #000000;
+}
+h1
+{
+	font-size: 3em;
+}
+h2
+{
+	font-size: 2em;
+}
+.neonPink
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 55px #ff0077, 0 0 75px #ff0077;
+
+}
+
+.neonYellow
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffe500, 0 0 30px #ffe500, 0 0 40px #ffe500, 0 0 55px #ffe500, 0 0 75px #ffe500;
+
+}
+
+
+.neonBlue 
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00e9ff, 0 0 30px #00e9ff, 0 0 40px #00e9ff, 0 0 55px #00e9ff, 0 0 75px #00e9ff;
+
+}
+
+.neonPurple
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #d000ff, 0 0 30px #d000ff, 0 0 40px #d000ff, 0 0 55px #d000ff, 0 0 75px #d000ff;
+
+}
+
+.neonGreen
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #65ff00, 0 0 30px #65ff00, 0 0 40px #65ff00, 0 0 55px #65ff00, 0 0 75px #65ff00;
+
+}
+
+
+.neonOrange
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fca05a, 0 0 30px #fca05a, 0 0 40px #fca05a, 0 0 55px #fca05a, 0 0 75px #fca05a;
+
+}
+
