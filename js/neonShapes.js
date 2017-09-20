@@ -2,7 +2,7 @@ var canvas = document.getElementById('board');
 var ctx = canvas.getContext('2d');
 var width = window.innerWidth;
 ctx.canvas.width  = window.innerWidth;
-ctx.canvas.height = window.innerHeight;
+ctx.canvas.height = window.innerHeight/2;
 
 
 
@@ -152,16 +152,16 @@ function rotatingCircle(startAng, endAng){
     if (endAng >= 3.4)
     {
       color = colors[Math.floor(Math.random()*colors.length)];
-      console.log('color'+color);
+      //console.log('color'+color);
     }
-    drawNeonCircleByColor((width/2),200,100,Math.PI*(startAng-1), Math.PI*endAng, 'black');
+    drawNeonCircleByColor((width/2),200,100,Math.PI*(startAng-0.2), Math.PI*endAng, 'black');
 
     ctx.shadowColor ="0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 55px #ff0077, 0 0 75px #ff0077";
     
     ctx.font = "1em Quicksand";
   ctx.textBaseline = "middle";
   ctx.fillStyle = "pink";
-  ctx.fillText(text, (width/2)-82, 200);
+  ctx.fillText(text, (width/2)-85, 200);
     drawNeonCircleByColor((width/2),200,100,Math.PI*startAng, Math.PI*endAng, color);}, 20);
   
 
@@ -176,7 +176,7 @@ function checkAngle(angle){
   {
     angle += 0.1;
   }
-  console.log(angle);
+  //console.log(angle);
   return angle;
 }
 /*
@@ -187,3 +187,59 @@ drawNeonCircleByColor(200,200,100,Math.PI*1.8, Math.PI*2.1, 'blue');
 drawNeonCircleByColor(200,200,100,Math.PI*1.9, Math.PI*2.2, 'pink');
 //drawCircle(200,200,100,Math.PI*1.5, Math.PI*3.5, '#000000', 10);
 */
+
+function changeScaleHeadings(numScale)
+{
+  var h1 = document.getElementsByTagName("h1");
+  var h2 = document.getElementsByTagName("h2");
+  for (var item in h1)
+  {
+    item.style.transform = "scale("+numScale+","+numScale+")";
+  }
+  for (var item in h2)
+  {
+    item.style.transform = "scale("+numScale+","+numScale+")";
+  }
+}
+var increase = false;
+function checkScale(numScale)
+{
+  
+  if(numScale >= 1)
+  {
+    //numScale -= 0.01;
+    increase = false; 
+  }
+  else if(numScale < 0.95)
+  {
+    increase = true;
+    //numScale += 0.05;
+  }
+  
+  if(increase==true)
+  {
+    numScale+=0.01;
+  }
+  else
+  {
+    numScale-=0.01;
+  }
+    
+  console.log(numScale);
+  return numScale;
+}
+var scaleNumber = 1;
+function scaleHeadings()
+{
+  scaleNumber = checkScale(scaleNumber,false);
+  scaleDiv(scaleNumber);
+}
+
+
+function scaleDiv(numScale)
+{
+  var myDiv = document.getElementById("scalingText");
+  myDiv.style.transform = "scale("+numScale+","+numScale+")";
+}
+var fun = setInterval(scaleHeadings, 40);
+
