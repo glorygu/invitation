@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+body
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 2em;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f9a4da, 0 0 30px ##f9a4da, 0 0 40px ##f9a4da, 0 0 55px ##f9a4da, 0 0 75px ##f9a4da;
+	background-color: #000000;
+}
+h1
+{
+	font-size: 4em;
+	font-weight:normal;
+}
+h2
+{
+	font-size: 2em;
+	font-weight:normal;
+	margin-top: -1.3em;
+	margin-bottom: -1.3em;
+}
+b
+{
+	font-weight:normal;
+
+}
+#test
+{
+	font-size: 400%;
+	font-family: "Century Gothic",  sans-serif;
+}
+.neonPink
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 2px #f9a4da, 0 0 2px #f9a4da, 0 0 10px #ff0077, 0 0 25px #ff0077, 0 0 25px #ff0077, 0 0 40px #ff0077, 0 0 60px #ff0077;
+
+}
+
+.neonYellow
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffe500, 0 0 30px #ffe500, 0 0 40px #ffe500, 0 0 55px #ffe500, 0 0 75px #ffe500;
+
+}
+
+
+.neonBlue 
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00e9ff, 0 0 30px #00e9ff, 0 0 40px #00e9ff, 0 0 55px #00e9ff, 0 0 75px #00e9ff;
+
+}
+
+.neonPurple
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #d000ff, 0 0 30px #d000ff, 0 0 40px #d000ff, 0 0 55px #d000ff, 0 0 75px #d000ff;
+
+}
+
+.neonGreen
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #65ff00, 0 0 30px #65ff00, 0 0 40px #65ff00, 0 0 55px #65ff00, 0 0 75px #65ff00;
+
+}
+
+
+.neonOrange
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fca05a, 0 0 30px #fca05a, 0 0 40px #fca05a, 0 0 55px #fca05a, 0 0 75px #fca05a;
+
+}
+
+.circle
+{
+	
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #d3ffff;
+	box-shadow: -1px -1px 60px 40px #0ff;
+	
+}
+
+
+#blueCircle
+{
+	
+	background-color: white;
+	 
+
+	background: -webkit-radial-gradient(#feffff, #9ae2f0, #0ff); /* Safari 5.1-6.0 */
+    background: -o-radial-gradient(#feffff, #9ae2f0, #0ff); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#feffff, #9ae2f0, #0ff); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#feffff, #9ae2f0, #0ff);
+    box-shadow: -1px -1px 60px 40px #0ff;
+	
+	/* in order: x offset, y offset, blur size, spread size, color */
+}
+
+/*http://codersblock.com/blog/creating-glow-effects-with-css/*/
+
+#blueCircle2
+{
+	background-color: #fff;
+    box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        0 0 100px 60px #d8ffff, /* middle magenta */
+        0 0 140px 90px #9ae2f0, /* outer cyan */
+        0 0 180px 120px #0ff; /* outer cyan */
+}
