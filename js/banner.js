@@ -156,11 +156,11 @@ function rotatingCircle(startAng, endAng){
     }
     drawNeonCircleByColor((width/2),200,100,Math.PI*(startAng-0.2), Math.PI*endAng, 'black');
 
-    ctx.shadowColor ="0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 55px #ff0077, 0 0 75px #ff0077";
+    //ctx.shadowColor ="0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 55px #ff0077, 0 0 75px #ff0077";
     
     ctx.font = "1em Quicksand";
   ctx.textBaseline = "middle";
-  ctx.fillStyle = "pink";
+  ctx.fillStyle = "#907E96";
   ctx.fillText(text, (width/2)-85, 200);
     drawNeonCircleByColor((width/2),200,100,Math.PI*startAng, Math.PI*endAng, color);}, 20);
   

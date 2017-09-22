@@ -11,7 +11,8 @@ body
 }
 h1
 {
-	font-size: 3em;
+	font-size: 5em;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 h2
 {
@@ -19,7 +20,7 @@ h2
 }
 .neonPink
 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 55px #ff0077, 0 0 75px #ff0077;

@@ -12,15 +12,38 @@
 	<header>			
 		
 	</header>
-		
+			<div id="pinkCircle"></div>
+			<div id="yellowCircle"></div>
+			<div id="pinkCircle2"></div>
+			<div id="blueCircle"></div>		
+		<div id="circleContainer">
 
-		<canvas id="neonBoard">
-		
-		</canvas>
+			<div id="title">
+				<h1><b class="neonPink">G</b><b class="neonGreen">L</b><b class="neonBlue">O</b><b class="neonYellow">W</b></h1>
+				<b class="neon"></b>
+				<h2 class="neonGreen"><b class="neonYellow">&#8226&#8226&#8226</b> 
+				<b class="neonOrange">I</b><b class="neonPurple">N &nbsp</b><b class="neonPink">T</b><b class="neonGreen">H</b><b class="neonOrange">E</b><b class="neonBlue">&#8226&#8226&#8226</b> </h2>
+				<h1>
+			    		<b class="neonBlue">D</b><b class="neonYellow">A</b><b class="neonPurple">R</b><b class="neonPink">K</b>
+					
+				</h1>
+			</div>
+			
+			
+		</div>
 
-		
-		
-		<div id="blueCircle2" class="circle"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			
+			$( window ).resize(function() {
+				var width = $("#circleContainer").innerWidth();
+				var height = $("#circleContainer").innerHeight();
+  				$("#yellowCircle").css("left",((width/3*2)+10)+"px");
+  				$("#yellowCircle").css("top",height/5+"px");
+  				$("#pinkCircle").css("left",width/3+"px");
+  				$("#pinkCircle").css("top",height/5+"px");
+				});
+		</script>
 
 
 	</body>
