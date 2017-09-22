@@ -1,29 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Poppins|Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Poppins|Didact+Gothic);
 body
 {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 2em;
-	color: #ffffff;
+	color: #907E96;
 	text-align: center;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f9a4da, 0 0 30px ##f9a4da, 0 0 40px ##f9a4da, 0 0 55px ##f9a4da, 0 0 75px ##f9a4da;
-	background-color: #000000;
+	background-color: #1A0027;
+
 }
 h1
 {
-	font-size: 4em;
+	font-size: 13vw;
 	font-weight:normal;
-	font-family: "Shadows Into Light",  cursive;
-
 }
 h2
 {
-	font-size: 2em;
+	font-size: 6vw;
 	font-weight:normal;
-	margin-top: -1.3em;
-	margin-bottom: -1.3em;
-	font-family: "Shadows Into Light",  cursive;
+	margin-top: -13vw;
+	margin-bottom: -13vw;
 }
 b
 {
@@ -33,20 +31,20 @@ b
 #test
 {
 	font-size: 400%;
-	font-family: "Shadows Into Light",  cursive;
+	font-family: 'Didact Gothic', sans-serif;
 }
 .neonPink
 {
-	/*font-family: "Poppins", sans-serif;*/
-	color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	color: #FFCAEE;
 	text-align: center;
-	text-shadow: 0 0 2px #f9a4da, 0 0 2px #f9a4da, 0 0 10px #ff0077, 0 0 25px #ff0077, 0 0 25px #ff0077, 0 0 40px #ff0077, 0 0 60px #ff0077;
+	text-shadow: 0 0 5px #f9a4da, 0 0 10px #f9a4da, 0 0 10px #ff0077, 0 0 25px #ff0077, 0 0 25px #ff0077, 0 0 40px #ff0077, 0 0 60px #ff0077;
 
 }
 
 .neonYellow
 {
-	/*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+	font-family: "Poppins", sans-serif;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffe500, 0 0 30px #ffe500, 0 0 40px #ffe500, 0 0 55px #ffe500, 0 0 75px #ffe500;
@@ -56,7 +54,7 @@ b
 
 .neonBlue 
 {
-	/*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+	font-family: "Poppins", sans-serif;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00e9ff, 0 0 30px #00e9ff, 0 0 40px #00e9ff, 0 0 55px #00e9ff, 0 0 75px #00e9ff;
@@ -65,19 +63,20 @@ b
 
 .neonPurple
 {
-	/*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+	font-family: "Poppins", sans-serif;
 	color: #ffffff;
 	text-align: center;
-	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #d000ff, 0 0 30px #d000ff, 0 0 40px #d000ff, 0 0 55px #d000ff, 0 0 75px #d000ff;
-	-webkit-animation: fade 3s infinite alternate;
-  -moz-animation: fade 3s infinite alternate;
-  -o-animation: fade 3s infinite alternate;
-  animation: fade 3s infinite alternate;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #7D0FB0, 0 0 30px #7D0FB0, 0 0 40px #7D0FB0, 0 0 55px #7D0FB0, 0 0 75px #7D0FB0;
+	  -webkit-animation: fade 4s infinite alternate;
+  -moz-animation: fade 4s infinite alternate;
+  -o-animation: fade 4s infinite alternate;
+  animation: fade 4s infinite alternate;
+
 }
 
 .neonGreen
 {
-	/*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+	font-family: "Poppins", sans-serif;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #65ff00, 0 0 30px #65ff00, 0 0 40px #65ff00, 0 0 55px #65ff00, 0 0 75px #65ff00;
@@ -87,40 +86,65 @@ b
 
 .neonOrange
 {
-	/*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+	font-family: "Poppins", sans-serif;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fca05a, 0 0 30px #fca05a, 0 0 40px #fca05a, 0 0 55px #fca05a, 0 0 75px #fca05a;
 
 }
 
-#blueCircle
+
+.circle
 {
-	width: 0.5vw;
-	height: 0.5vw;
+	
+	width: 0.2em;
+	height: 0.2em;
+	border-radius: 50%;
+	text-align: center;
+	/**background-color: #d3ffff;
+	box-shadow: -1px -1px 60px 40px #0ff;**/
+	
+}
+
+
+
+/*http://codersblock.com/blog/creating-glow-effects-with-css/*/
+
+.blueCircle
+{
+	width: 0.3vw;
+	height: 0.3vw;
 	border-radius: 50%;
 	position: relative;
 	background-color: #fff;
-	top: 39.4vw;
-    left: 30vw;
+	
     box-shadow:
         0 0 2.6vw 1.3vw #fff,  /* inner white */
         0 0 4.42vw 2.6vw #d8ffff, /* middle magenta */
         0 0 5.98vw 3.9vw #9ae2f0, /* outer cyan */
         0 0 7.8vw 5.2vw #0ff; /* outer cyan */
     z-index: 	-1;
+    
 }
 
-
-#pinkCircle,#pinkCircle2
+#blueCircle1
 {
-	width: 0.2em;
-	height: 0.2em;
+	top: 39vw;
+    left: 31vw;
+    -webkit-animation: fade 4s infinite alternate;
+  -moz-animation: fade 4s infinite alternate;
+  -o-animation: fade 4s infinite alternate;
+  animation: fade 4s infinite alternate;
+}
+
+.pinkCircle
+{
+	width: 0.3vw;
+	height: 0.3vw;
 	border-radius: 50%;
 	text-align: center;
 	position: relative;
-	top: 12.5vw;
-    left: 28vw;
+	
 	background-color: #fff;
 	z-index: 	-1;
     box-shadow:
@@ -130,6 +154,11 @@ b
         0 0 5.9vw 3.9vw #B61A64, /* outer cyan */
         0 0 7.8vw 5.2vw #991658; /* outer cyan */
 }
+#pinkCircle1
+{
+	top: 10.5vw;
+    left: 31vw;
+}
 #pinkCircle2
 {
 	top: 34vw;
@@ -137,12 +166,13 @@ b
 }
 #yellowCircle
 {
-	width: 0.2em;
-	height: 0.2em;
+	width: 0.3vw;
+	height: 0.3vw;
+	opacity: 1.1;
 	border-radius: 50%;
 	text-align: center;
 	position: relative	;
-	top: 14vw;
+	top: 15vw;
     left: 68vw;
 	background-color: #fff;
 	z-index: 	-1;
@@ -167,14 +197,14 @@ b
 }
 
 
+
 #fade {
-  opacity: 0.8;
-  color: #ebffff;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
-  -webkit-animation: fade 3s infinite alternate;
-  -moz-animation: fade 3s infinite alternate;
-  -o-animation: fade 3s infinite alternate;
-  animation: fade 3s infinite alternate;
+  
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00e9ff, 0 0 30px #00e9ff, 0 0 40px #00e9ff, 0 0 55px #00e9ff, 0 0 75px #00e9ff;
+  -webkit-animation: fade 2s infinite alternate;
+  -moz-animation: fade 2s infinite alternate;
+  -o-animation: fade 2s infinite alternate;
+  animation: fade 2s infinite alternate;
 }
 
 @-moz-keyframes fade {
