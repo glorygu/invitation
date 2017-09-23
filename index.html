@@ -5,29 +5,40 @@
 		<meta charset="utf-8"/>
 		<meta name="author" content="Gloriana Garro">
 		<meta name="keywords" content="HTML,CSS,XML,JavaScript">		
-		<title>Invitacion 15 años</title>
-		<link rel="stylesheet"  href="css/invite.css">
+		<title>Opcion Flicker</title>
+		<link rel="stylesheet"  href="css/textFlicker.css">
 	</head>
-	<body onload="spinningWheel()">
+	<body onload="fadeInterval()">
 	<header>			
 		
 	</header>
-		<div id ="scalingText">
-			<h1 class="neonPink">GLOW</h1>
-			<h2 class="neonGreen">IN THE</h2>
-			<h1 class="neonBlue">DARK</h1>
+			<div class="pinkCircle" id="pinkCircle1"></div>
+			<div id="yellowCircle"></div>
+			<div  class="pinkCircle" id="pinkCircle2"></div>
+			<div  class="blueCircle" id="blueCircle1"></div>		
+		<div id="circleContainer">
+
+			<div id="title">
+				<h1><b class="neonPink">G</b><b class="neonGreen">L</b><b class="neonBlue"><span id="fade">O</span></b><b class="neonYellow">W</b></h1>
+				<b class="neon"></b>
+				<h2 class="neonGreen"><b class="neonYellow">&#8226&#8226&#8226</b> 
+				<b class="neonOrange">I</b><b class="neonPurple">N &nbsp</b><b class="neonPink">T</b><b class="neonGreen">H</b><b class="neonOrange">E</b><b class="neonBlue">&#8226&#8226&#8226</b> </h2>
+				<h1>
+			    		<b class="neonBlue">D</b><b class="neonYellow">A</b><b class="neonPurple">R</b><b class="neonPink">K</b>
+					
+				</h1>
+			</div>
+			
+			
 		</div>
-		<div> 
+		<div id="text"> 
 		Celebremos los 15 de 
 		<h3>Nicole Cordoba</h3>
-
-		Fecha:<br>
-
-		<canvas id="board">
-		
-		</canvas>
-
-		<script type="text/javascript" src="js/neonShapes.js"></script>
+		Fecha: Sábado 4 de noviembre de 2017 <br>
+		<div id="dateCircle">
+			<div id="date">4 nov 2017</div>
+		</div>
+		<script type="text/javascript" src="js/textFlicker.js"></script>
 		Hora: 7:00 pm<br>
 		Lugar: <br>
 
@@ -36,7 +47,19 @@
 		<br>
 
 		</div>
-
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			
+			$( window ).resize(function() {
+				var width = $("#circleContainer").innerWidth();
+				var height = $("#circleContainer").innerHeight();
+  				$("#yellowCircle").css("left",((width/3*2)+10)+"px");
+  				$("#yellowCircle").css("top",height/5+"px");
+  				$("#pinkCircle").css("left",width/3+"px");
+  				$("#pinkCircle").css("top",height/5+"px");
+				});
+		</script>
 
 
 	</body>
