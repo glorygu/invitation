@@ -99,8 +99,9 @@ function drawNeonCircle(x, y, radius, startAng, endAng, r, g, b)
   ctx.lineWidth=3;
   drawCircle(x, y, radius, startAng, endAng);
   ctx.strokeStyle= '#fff';
-  ctx.lineWidth=1.5;
+  ctx.lineWidth=1;
   drawCircle(x, y, radius, startAng, endAng);
+
 
 
 }
@@ -127,17 +128,21 @@ function drawNeonCircleByColor(x, y, radius, startAng, endAng, color)
     case 'black':
       drawNeonCircle(x, y, radius, startAng, endAng,0,0,0);
     break;
+    case 'purple':
+      drawNeonCircle(x,y,radius, startAng, endAng, 26,0,39);
+    break;
 
 
   }  
 }
 var text = "4 NOV 2017";
+
 function spinningWheel(){
 
 
 
 var startAng = 1.4;
-var endAng = 1.9;
+var endAng = 2.0;
 
 rotatingCircle(startAng, endAng);
 
@@ -154,15 +159,15 @@ function rotatingCircle(startAng, endAng){
       color = colors[Math.floor(Math.random()*colors.length)];
       //console.log('color'+color);
     }
-    drawNeonCircleByColor((width/2),200,100,Math.PI*(startAng-0.2), Math.PI*endAng, 'black');
+    drawNeonCircleByColor((width/2)-15,200,100,Math.PI*(startAng-0.2), Math.PI*endAng, 'purple');
 
-    ctx.shadowColor ="0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #ff0077, 0 0 55px #ff0077, 0 0 75px #ff0077";
-    
-    ctx.font = "1em Quicksand";
+    ctx.shadowColor ="#5d1d72";//"0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff54a3, 0 0 30px #ff54a3, 0 0 40px #ff54a3, 0 0 55px #ff54a3, 0 0 75px #ff54a3";
+    ctx.shadowBlur=1;
+    ctx.font = "0.6em Poppins";
   ctx.textBaseline = "middle";
-  ctx.fillStyle = "pink";
-  ctx.fillText(text, (width/2)-85, 200);
-    drawNeonCircleByColor((width/2),200,100,Math.PI*startAng, Math.PI*endAng, color);}, 20);
+  ctx.fillStyle = "#907E96";
+  ctx.fillText(text, (width/2)-98, 200);
+    drawNeonCircleByColor((width/2)-15, 200,100,Math.PI*startAng, Math.PI*endAng, color);}, 20);
   
 
 
@@ -241,5 +246,4 @@ function scaleDiv(numScale)
   var myDiv = document.getElementById("scalingText");
   myDiv.style.transform = "scale("+numScale+","+numScale+")";
 }
-var fun = setInterval(scaleHeadings, 40);
-
+//var fun = setInterval(scaleHeadings, 40);

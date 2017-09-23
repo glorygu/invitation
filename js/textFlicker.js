@@ -1,61 +1,71 @@
-//var textHolder = document.getElementsByTagName('div')[0],
-var textHolder = document.getElementsByClassName("neonPink")[0],
-    text = textHolder.innerHTML,
-	chars = text.length,
-	newText = '',
-	i;	
 
-for (i = 0; i < chars; i += 1) {
-	newText += '<i>' + text.charAt(i) + '</i>';
+
+
+var funVar;
+var timeoutVar = 100;
+
+function fadeDateCircle()
+{
+  var elem = document.getElementById("dateCircle");
+  funVar = setTimeout(changeOpacity, timeoutVar, 0.8, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*2, 0.6, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*3, 0.4, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*4, 0.2, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*5, 0.1, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*6, 0.2, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*7, 0.4, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*8, 0.4, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*9, 0.8, elem);
+  funVar = setTimeout(changeOpacity, timeoutVar*10, 1, elem);
+  var colorHex = getRandomColorHex();
+  var boxShadow = "0 0 5vw "+ colorHex+", inset 0 0 5vw "+colorHex;
+  console.log(boxShadow);
+  changeBoxShadow(boxShadow, elem);
+
+
+
 }
-console.log(newText);
-textHolder.innerHTML = newText;
 
-var letters = document.getElementsByTagName('i'),
-	flickers = [5, 7, 9, 11, 13, 15, 17],
-	randomLetter,
-	flickerNumber,
-	counter;
-
-function randomFromInterval(from,to) {
-	return Math.floor(Math.random()*(to-from+1)+from);
+function fadeInterval()
+{
+	setInterval(fadeDateCircle, 1100);
 }
 
-function hasClass(element, cls) {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+function changeOpacity(opacity, elem)
+{
+  elem.style.opacity = opacity;  
+}
+function changeBoxShadow(boxShadow, elem)
+{
+  elem.style["boxShadow"] = boxShadow;
 }
 
-function flicker() {		
-	counter += 1;
-	
-	if (counter === flickerNumber) {
-		return;
+function getRandomColorHex()
+{
+	var colors = ['pink', 'yellow', 'orange', 'blue', 'green','purple'];
+	var randomColor = colors[Math.floor(Math.random()*colors.length)];
+	var colorHex = "";
+	switch(randomColor)
+	{
+		case 'pink':
+			colorHex = "#9D1955";
+		break;
+		case 'yellow':
+			colorHex = "#FFD314";
+		break;
+		case 'orange':
+			colorHex = "#FF850C";
+		break;
+		case 'blue':
+			colorHex = "#109CB7";
+		break;
+		case 'green':
+			colorHex = "#1FA739";
+		break;
+		case 'puple':
+			colorHex = "#8D0FC8";
+		break;
+
 	}
-
-	setTimeout(function () {
-		if(hasClass(randomLetter, 'off')) {
-			randomLetter.className = '';
-		}
-		else {
-			randomLetter.className = 'off';
-		}
-
-		flicker();
-	}, 30);
+	return colorHex;
 }
-
-(function loop() {
-    var rand = randomFromInterval(500,3000);
-
-	randomLetter = 0//randomFromInterval(0, 3);
-	randomLetter = letters[randomLetter];
-	
-	flickerNumber = randomFromInterval(0, 6);
-	flickerNumber = flickers[flickerNumber];
-
-    setTimeout(function() {
-            counter = 0;
-            flicker();
-            loop();  
-    }, rand);
-}());
