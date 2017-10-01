@@ -10,6 +10,13 @@ body
 	text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #f9a4da, 0 0 15px #f9a4da, 0 0 20px #f9a4da, 0 0 25px #f9a4da, 0 0 30px #f9a4da;
 	background-color: #1A0027;
 
+
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+
 }
 .bubblerOne
 {
@@ -28,7 +35,7 @@ h1
 {
 	font-size: 16vw;
 	font-weight:normal;
-	margin-top: 1vw;
+	margin-top: 3vw;
 }
 h2
 {
@@ -41,8 +48,8 @@ h3
 {
 	font-size: 	6vw;
 	font-weight: 	normal;	
-	margin-top: 	-1vw;
-	margin-bottom: 	-1vw;
+	margin-top: 	1vw;
+	margin-bottom: 	1vw;
 }
 b
 {
@@ -114,6 +121,10 @@ b
 
 }
 
+#text
+{
+  line-height: 6vw;
+}
 
 .circle
 {
@@ -150,7 +161,7 @@ b
 
 #blueCircle1
 {
-	top: 42vw;
+	top: 37vw;
     left: 29vw;
     -webkit-animation: fade 4s infinite alternate;
   -moz-animation: fade 4s infinite alternate;
@@ -182,7 +193,7 @@ b
 }
 #pinkCircle2
 {
-	top: 38vw;
+	top: 33vw;
     left: 66vw;
 }
 #yellowCircle
@@ -194,7 +205,7 @@ b
 	text-align: center;
 	position: relative	;
 	top: 9vw;
-    left: 71vw;
+    left: 70vw;
 	background-color: #fff;
 	z-index: 	-1;
     box-shadow:
@@ -312,7 +323,7 @@ b
   border-radius: 50%;
   font-size: 3vw;
   /*left: 40.2vw;*/
-  top: 1vw;
+  top: 3vw;
   margin-bottom: 2vw;
   position: relative;
   text-align: center;
@@ -323,7 +334,7 @@ b
 
 #date
 {
-	margin-top: 3.5vw;
+	margin-top: 3vw;
 }
 
 
@@ -335,6 +346,7 @@ b
 	 display: inline-block;
 	 text-align: center;
 	 margin-right: 	-7vw;
+ 
 }
 
 #dateRight 
@@ -343,5 +355,22 @@ b
 	display: inline-block;
 	text-align: center;
 	margin-left: 	-7vw;
+   
+
+}
+
+#wazeLogo
+{
+  width: 7vw;
+  height: 6vw;
+  top: 5vw;
+
+}
+
+#walogo
+{
+  width: 5vw;
+  height: 5vw;
+  top: 5vw;
 
 }
